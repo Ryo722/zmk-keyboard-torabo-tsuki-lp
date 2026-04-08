@@ -30,11 +30,11 @@
 
         sym_layer {
             bindings = <
-&trans  &trans            &trans        &trans            &trans             &trans                         &trans     &trans     &trans            &trans                &trans         &trans
-&trans  &kp N1            &kp N2        &kp N3            &kp N4             &kp N5                         &kp N6     &kp N7     &kp N8            &kp N9                &kp N0         &trans
-&trans  &kp LEFT_COMMAND  &kp GRAVE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans  &trans  &mkp MCLK  &mkp LCLK  &mkp RCLK         &kp NON_US_BACKSLASH  &kp SQT        &trans
-&trans  &kp LEFT_SHIFT    &kp LEFT_ALT  &kp LCTRL         &kp RIGHT_BRACE    &kp PIPE       &trans  &trans  &kp COMMA  &kp DOT    &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH  &trans
-&trans  &trans            &trans        &trans            &trans             &trans         &trans  &trans  &trans     &trans     &trans            &trans                &trans         &trans
+&trans  &trans            &trans        &trans            &trans             &trans                         &trans     &trans     &trans            &trans                &trans           &trans
+&trans  &kp N1            &kp N2        &kp N3            &kp N4             &kp N5                         &kp N6     &kp N7     &kp N8            &kp N9                &kp N0           &trans
+&trans  &kp LEFT_COMMAND  &kp GRAVE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans  &trans  &mkp MCLK  &mkp LCLK  &mkp RCLK         &kp NON_US_BACKSLASH  &kp SQT          &trans
+&trans  &kp LEFT_SHIFT    &kp LEFT_ALT  &kp LCTRL         &kp RIGHT_BRACE    &kp PIPE       &trans  &trans  &kp COMMA  &kp DOT    &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp RIGHT_SHIFT  &trans
+&trans  &trans            &trans        &trans            &trans             &trans         &trans  &trans  &trans     &trans     &trans            &trans                &trans           &trans
             >;
         };
 
