@@ -25,40 +25,16 @@
         };
     };
 
-        behaviors {
-        cmd_a: cmd_a {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <120>;
-            bindings = <&kp LGUI>, <&kp A>;
-            display-name = "Cmd/A";
-        };
-
-        sft_z: sft_z {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <120>;
-            bindings = <&kp LSHFT>, <&kp Z>;
-            display-name = "Shift/Z";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         base_layer {
             bindings = <
-&trans  &trans              &trans     &trans    &trans              &trans                                          &trans     &trans  &trans     &trans   &trans                 &trans
-&trans  &kp Q               &kp W      &kp E     &kp R               &kp T                                           &kp Y      &kp U   &kp I      &kp O    &kp P                  &trans
-&kp LCTRL &cmd_a   &kp S    &kp D    &kp F    &kp G      &mkp LCLK                    &mkp RCLK                  &kp H    &kp J    &kp K     &kp L    &kp SEMI   &kp SQT
-&kp LSHFT &sft_z   &kp X    &kp C    &kp V    &kp B      &lt 3 SPACE                  &lt 2 RET                   &kp N    &kp M    &kp COMMA &kp DOT  &kp FSLH   &kp RSHFT
-&trans  &kp ESCAPE          &kp LCTRL  &kp LALT  &lt 2 LEFT_COMMAND  &lt 1 TAB  &kp BSPC          &kp SPACE          &lt 3 RET  &none   &trans     &trans   &kp GLOBE              &none
+&trans     &trans      &trans     &trans    &trans              &trans                             &trans     &trans  &trans     &trans   &trans     &trans
+&trans     &kp Q       &kp W      &kp E     &kp R               &kp T                              &kp Y      &kp U   &kp I      &kp O    &kp P      &trans
+&kp LCTRL  &cmd_a      &kp S      &kp D     &kp F               &kp G      &mkp LCLK    &mkp RCLK  &kp H      &kp J   &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT  &sft_z      &kp X      &kp C     &kp V               &kp B      &lt 3 SPACE  &lt 2 RET  &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
+&trans     &kp ESCAPE  &kp LCTRL  &kp LALT  &lt 2 LEFT_COMMAND  &lt 1 TAB  &kp BSPC     &kp SPACE  &lt 3 RET  &none   &trans     &trans   &kp GLOBE  &none
             >;
         };
 
@@ -84,11 +60,11 @@
 
         sys_layer {
             bindings = <
-&trans  &trans            &trans                  &trans          &trans                   &trans                        &trans         &trans          &trans        &trans           &trans           &trans
-&trans  &kp ESCAPE        &mt LS(LCTRL) TAB       &kp UP_ARROW    &trans                   &trans                        &kp HOME       &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp END          &trans
-&trans  &kp LEFT_COMMAND  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END       &trans  &trans  &kp PAGE_UP    &mkp MB1        &mkp MB2      &trans           &trans           &trans
-&trans  &kp LEFT_SHIFT    &kp LS(LG(LEFT_ARROW))  &trans          &kp LS(LG(RIGHT_ARROW))  &trans        &trans  &trans  &kp PAGE_DOWN  &trans          &trans        &trans           &kp RIGHT_SHIFT  &trans
-&trans  &bt BT_SEL 0      &bt BT_SEL 1            &bt BT_SEL 2    &bt BT_SEL 3             &bt BT_SEL 4  &trans  &trans  &trans         &trans          &trans        &trans           &kp GLOBE        &trans
+&trans  &trans            &trans              &trans          &trans               &trans                        &trans         &trans          &trans        &trans           &trans           &trans
+&trans  &kp ESCAPE        &mt LS(LCTRL) TAB   &kp UP_ARROW    &trans               &trans                        &kp HOME       &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp END          &trans
+&trans  &kp LEFT_COMMAND  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END       &trans  &trans  &kp PAGE_UP    &mkp MB1        &mkp MB2      &trans           &trans           &trans
+&trans  &kp LEFT_SHIFT    &kp LC(LEFT_ARROW)  &trans          &kp RC(RIGHT_ARROW)  &trans        &trans  &trans  &kp PAGE_DOWN  &trans          &trans        &trans           &kp RIGHT_SHIFT  &trans
+&trans  &bt BT_SEL 0      &bt BT_SEL 1        &bt BT_SEL 2    &bt BT_SEL 3         &bt BT_SEL 4  &trans  &trans  &trans         &trans          &trans        &trans           &kp GLOBE        &trans
             >;
         };
     };
