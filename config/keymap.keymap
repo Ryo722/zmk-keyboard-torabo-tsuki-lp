@@ -30,11 +30,11 @@
 
         base_layer {
             bindings = <
-&trans  &trans              &trans        &trans            &trans              &trans                                      &trans     &trans  &trans     &trans             &trans           &trans
-&trans  &kp Q               &kp W         &kp E             &kp R               &kp T                                       &kp Y      &kp U   &kp I      &kp O              &kp P            &trans
-&none   &mt LEFT_COMMAND A  &kp S         &kp D             &kp F               &kp G      &mkp LCLK       &mkp RCLK        &kp H      &kp J   &kp K      &kp L              &kp SEMI         &none
-&none   &mt LEFT_SHIFT Z    &kp X         &kp C             &kp V               &kp B      &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp N      &kp M   &kp COMMA  &kp DOT            &kp FSLH         &none
-&trans  &kp LCTRL           &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 2 LEFT_COMMAND  &lt 1 TAB  &kp BSPC        &kp SPACE        &lt 3 RET  &none   &none      &kp RIGHT_COMMAND  &kp RIGHT_SHIFT  &none
+&trans  &trans     &trans        &trans            &trans              &trans                                      &trans     &trans  &trans     &trans             &trans           &trans
+&trans  &kp Q      &kp W         &kp E             &kp R               &kp T                                       &kp Y      &kp U   &kp I      &kp O              &kp P            &trans
+&none   &kp A      &kp S         &kp D             &kp F               &kp G      &mkp LCLK       &mkp RCLK        &kp H      &kp J   &kp K      &kp L              &kp SEMI         &none
+&none   &kp Z      &kp X         &kp C             &kp V               &kp B      &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp N      &kp M   &kp COMMA  &kp DOT            &kp FSLH         &none
+&trans  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 2 LEFT_COMMAND  &lt 1 TAB  &kp BSPC        &kp SPACE        &lt 3 RET  &none   &none      &kp RIGHT_COMMAND  &kp RIGHT_SHIFT  &none
             >;
         };
 
@@ -44,7 +44,7 @@
 &trans  &kp N1            &kp N2            &kp N3             &kp N4                &kp N5                                           &kp N6                 &kp N7    &kp N8    &kp N9                &kp N0           &trans
 &trans  &kp LEFT_COMMAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans     &mkp MB3               &mkp MB1  &mkp MB2  &kp NON_US_BACKSLASH  &kp SQT          &trans
 &trans  &kp LEFT_SHIFT    &trans            &trans             &trans                &kp LEFT_PARENTHESIS   &trans         &trans     &kp RIGHT_PARENTHESIS  &trans    &trans    &trans                &kp RIGHT_SHIFT  &trans
-&trans  &kp ESCAPE        &kp LCTRL         &kp LEFT_ALT       &kp LEFT_COMMAND      &trans                 &kp BACKSPACE  &kp SPACE  &kp ENTER              &trans    &trans    &trans                &kp GLOBE        &trans
+&trans  &kp ESCAPE        &kp LCTRL         &kp LEFT_ALT       &kp LEFT_COMMAND      &trans                 &kp BACKSPACE  &kp SPACE  &kp ENTER              &trans    &trans    &trans                &kp ESC          &trans
             >;
         };
 
@@ -64,7 +64,7 @@
 &trans  &kp ESCAPE      &mt LS(LCTRL) TAB   &kp UP_ARROW    &trans               &trans                        &kp HOME       &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp END          &trans
 &trans  &kp LG(SPACE)   &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END       &trans  &trans  &kp PAGE_UP    &mkp MB1        &mkp MB2      &trans           &trans           &trans
 &trans  &kp LEFT_SHIFT  &kp LC(LEFT_ARROW)  &trans          &kp RC(RIGHT_ARROW)  &trans        &trans  &trans  &kp PAGE_DOWN  &trans          &trans        &trans           &kp RIGHT_SHIFT  &trans
-&trans  &bt BT_SEL 0    &bt BT_SEL 1        &bt BT_SEL 2    &bt BT_SEL 3         &bt BT_SEL 4  &trans  &trans  &trans         &trans          &trans        &trans           &kp GLOBE        &trans
+&trans  &bt BT_SEL 0    &bt BT_SEL 1        &bt BT_SEL 2    &bt BT_SEL 3         &bt BT_SEL 4  &trans  &trans  &trans         &trans          &trans        &trans           &kp LG(ESCAPE)   &trans
             >;
         };
     };
